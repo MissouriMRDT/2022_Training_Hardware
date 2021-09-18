@@ -1,0 +1,236 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MRDT_ICs:LT1910 U?
+U 1 1 61464EE7
+P 1600 2050
+F 0 "U?" H 1975 2737 60  0000 C CNN
+F 1 "LT1910" H 1975 2631 60  0000 C CNN
+F 2 "" H 1600 2050 60  0001 C CNN
+F 3 "" H 1600 2050 60  0001 C CNN
+	1    1600 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61465FC8
+P 950 1650
+F 0 "R?" V 850 1650 50  0000 C CNN
+F 1 "5.1k" V 950 1650 50  0000 C CNN
+F 2 "" V 880 1650 50  0001 C CNN
+F 3 "~" H 950 1650 50  0001 C CNN
+	1    950  1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1100 1650 1400 1650
+$Comp
+L power:+5V #PWR?
+U 1 1 61466F36
+P 700 1250
+F 0 "#PWR?" H 700 1100 50  0001 C CNN
+F 1 "+5V" H 715 1423 50  0000 C CNN
+F 2 "" H 700 1250 50  0001 C CNN
+F 3 "" H 700 1250 50  0001 C CNN
+	1    700  1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  1650 700  1650
+Wire Wire Line
+	700  1650 700  1250
+$Comp
+L Device:C C?
+U 1 1 61467D84
+P 1100 2250
+F 0 "C?" H 1215 2296 50  0000 L CNN
+F 1 "0.1uF" H 1215 2205 50  0000 L CNN
+F 2 "" H 1138 2100 50  0001 C CNN
+F 3 "~" H 1100 2250 50  0001 C CNN
+	1    1100 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1950 1100 1950
+Wire Wire Line
+	1100 1950 1100 2100
+$Comp
+L Device:CP1 C?
+U 1 1 6146892E
+P 2850 2250
+F 0 "C?" H 2965 2296 50  0000 L CNN
+F 1 "10uF 50V" H 2965 2205 50  0000 L CNN
+F 2 "" H 2850 2250 50  0001 C CNN
+F 3 "~" H 2850 2250 50  0001 C CNN
+	1    2850 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1650 2850 1650
+Wire Wire Line
+	2850 1650 2850 1800
+Wire Wire Line
+	2550 1800 2850 1800
+Connection ~ 2850 1800
+Wire Wire Line
+	2850 1800 2850 2100
+$Comp
+L MRDT_Connectors:AndersonPP Conn?
+U 4 1 6146EAA6
+P 7150 800
+F 0 "Conn?" H 7122 847 60  0000 R CNN
+F 1 "AndersonPP" H 7122 953 60  0000 R CNN
+F 2 "" H 7000 250 60  0001 C CNN
+F 3 "" H 7000 250 60  0001 C CNN
+	4    7150 800 
+	-1   0    0    1   
+$EndComp
+Text GLabel 6500 900  0    50   Input ~ 0
+PV
+Wire Wire Line
+	6750 900  6500 900 
+Text GLabel 2850 1250 1    50   Input ~ 0
+PV
+Wire Wire Line
+	2850 1650 2850 1250
+Connection ~ 2850 1650
+$Comp
+L MRDT_Connectors:AndersonPP Conn?
+U 1 1 61470EEA
+P 7150 1700
+F 0 "Conn?" H 7122 1747 60  0000 R CNN
+F 1 "AndersonPP" H 7122 1853 60  0000 R CNN
+F 2 "" H 7000 1150 60  0001 C CNN
+F 3 "" H 7000 1150 60  0001 C CNN
+	1    7150 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61471605
+P 6650 1950
+F 0 "#PWR?" H 6650 1700 50  0001 C CNN
+F 1 "GND" H 6655 1777 50  0000 C CNN
+F 2 "" H 6650 1950 50  0001 C CNN
+F 3 "" H 6650 1950 50  0001 C CNN
+	1    6650 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1950 6650 1800
+Wire Wire Line
+	6650 1800 6750 1800
+Wire Wire Line
+	4650 1750 4650 1650
+Text GLabel 4850 3300 2    50   Input ~ 0
+Anderson1
+$Comp
+L Device:R R?
+U 1 1 61475FA9
+P 4250 3300
+F 0 "R?" V 4150 3300 50  0000 C CNN
+F 1 "3300" V 4250 3300 50  0000 C CNN
+F 2 "" V 4180 3300 50  0001 C CNN
+F 3 "~" H 4250 3300 50  0001 C CNN
+	1    4250 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 61476547
+P 3700 3300
+F 0 "D?" H 3700 3400 50  0000 C CNN
+F 1 "LED" H 3700 3200 50  0000 C CNN
+F 2 "" H 3700 3300 50  0001 C CNN
+F 3 "~" H 3700 3300 50  0001 C CNN
+	1    3700 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3300 3850 3300
+$Comp
+L power:GND #PWR?
+U 1 1 6146CD22
+P 2000 3400
+F 0 "#PWR?" H 2000 3150 50  0001 C CNN
+F 1 "GND" H 2005 3227 50  0000 C CNN
+F 2 "" H 2000 3400 50  0001 C CNN
+F 3 "" H 2000 3400 50  0001 C CNN
+	1    2000 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 3300 2000 3400
+Connection ~ 2000 3300
+Wire Wire Line
+	1100 3300 2000 3300
+Wire Wire Line
+	1100 2400 1100 3300
+Wire Wire Line
+	2850 3300 2000 3300
+Wire Wire Line
+	2000 2250 2000 3300
+Wire Wire Line
+	2850 2400 2850 3300
+Wire Wire Line
+	2850 3300 3550 3300
+Connection ~ 2850 3300
+$Comp
+L Transistor_FET:IRFS4115 Q?
+U 1 1 61473490
+P 4550 1950
+F 0 "Q?" H 4755 1996 50  0000 L CNN
+F 1 "IRFS4115" H 4755 1905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 4750 1875 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/irfs4115pbf.pdf?fileId=5546d462533600a401535636e5d2218f" H 4550 1950 50  0001 L CNN
+	1    4550 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3300 4650 3300
+Wire Wire Line
+	2550 1950 4350 1950
+Wire Wire Line
+	2850 1650 4650 1650
+Wire Wire Line
+	4650 2150 4650 3300
+Connection ~ 4650 3300
+Wire Wire Line
+	4650 3300 4850 3300
+$Comp
+L MRDT_Connectors:AndersonPP Conn?
+U 3 1 61481E7D
+P 7150 1250
+F 0 "Conn?" H 7122 1297 60  0000 R CNN
+F 1 "AndersonPP" H 7122 1403 60  0000 R CNN
+F 2 "" H 7000 700 60  0001 C CNN
+F 3 "" H 7000 700 60  0001 C CNN
+	3    7150 1250
+	-1   0    0    1   
+$EndComp
+Text GLabel 6600 1350 0    50   Input ~ 0
+Anderson1
+Wire Wire Line
+	6600 1350 6750 1350
+Text Notes 3600 3500 0    50   ~ 0
+green\n
+$Sheet
+S 6350 3450 1250 850 
+U 61487FC2
+F0 "Tiva" 50
+F1 "Tiva.sch" 50
+$EndSheet
+$EndSCHEMATC
