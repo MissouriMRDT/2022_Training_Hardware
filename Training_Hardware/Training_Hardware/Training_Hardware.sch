@@ -1,0 +1,465 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title "LT 1910 Example Circuit"
+Date ""
+Rev ""
+Comp "MRDT"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MRDT_ICs:LT1910 U?
+U 1 1 614668E5
+P 1750 1950
+F 0 "U?" H 2125 2637 60  0000 C CNN
+F 1 "LT1910" H 2125 2531 60  0000 C CNN
+F 2 "" H 1750 1950 60  0001 C CNN
+F 3 "" H 1750 1950 60  0001 C CNN
+	1    1750 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61466ECC
+P 1200 1550
+F 0 "R?" V 1100 1550 50  0000 C CNN
+F 1 "5.1k" V 1200 1550 50  0000 C CNN
+F 2 "" V 1130 1550 50  0001 C CNN
+F 3 "~" H 1200 1550 50  0001 C CNN
+	1    1200 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 1550 1350 1550
+Wire Wire Line
+	1050 1550 850  1550
+Wire Wire Line
+	850  1300 850  1550
+$Comp
+L power:+5V #PWR?
+U 1 1 61469CCA
+P 850 1300
+F 0 "#PWR?" H 850 1150 50  0001 C CNN
+F 1 "+5V" H 865 1473 50  0000 C CNN
+F 2 "" H 850 1300 50  0001 C CNN
+F 3 "" H 850 1300 50  0001 C CNN
+	1    850  1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6146AC77
+P 1200 2100
+F 0 "C?" H 1315 2146 50  0000 L CNN
+F 1 "0.1uF" H 1315 2055 50  0000 L CNN
+F 2 "" H 1238 1950 50  0001 C CNN
+F 3 "~" H 1200 2100 50  0001 C CNN
+	1    1200 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 6146C3BD
+P 3050 2100
+F 0 "C?" H 3165 2146 50  0000 L CNN
+F 1 "10uF 50V" H 3165 2055 50  0000 L CNN
+F 2 "" H 3050 2100 50  0001 C CNN
+F 3 "~" H 3050 2100 50  0001 C CNN
+	1    3050 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1850 1200 1850
+Wire Wire Line
+	1200 1850 1200 1950
+Wire Wire Line
+	1200 2650 2150 2650
+Connection ~ 2150 2650
+Wire Wire Line
+	2150 2650 3050 2650
+Wire Wire Line
+	2150 2650 2150 2700
+$Comp
+L power:GND #PWR?
+U 1 1 6146DC1B
+P 2150 2700
+F 0 "#PWR?" H 2150 2450 50  0001 C CNN
+F 1 "GND" H 2155 2527 50  0000 C CNN
+F 2 "" H 2150 2700 50  0001 C CNN
+F 3 "" H 2150 2700 50  0001 C CNN
+	1    2150 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1550 3050 1550
+Wire Wire Line
+	3050 1550 3050 1700
+Wire Wire Line
+	2700 1700 3050 1700
+Connection ~ 3050 1700
+Wire Wire Line
+	3050 1700 3050 1950
+Wire Wire Line
+	3050 1550 3050 1150
+Connection ~ 3050 1550
+$Comp
+L MRDT_Connectors:AndersonPP Conn?
+U 4 1 6146F27B
+P 6900 1150
+F 0 "Conn?" H 6872 1197 60  0000 R CNN
+F 1 "AndersonPP" H 6872 1303 60  0000 R CNN
+F 2 "" H 6750 600 60  0001 C CNN
+F 3 "" H 6750 600 60  0001 C CNN
+	4    6900 1150
+	-1   0    0    1   
+$EndComp
+Text GLabel 6300 1250 0    50   Input ~ 0
+PV
+Wire Wire Line
+	6500 1250 6300 1250
+Text GLabel 3050 1150 1    50   Input ~ 0
+PV
+$Comp
+L MRDT_Connectors:AndersonPP Conn?
+U 1 1 61472AB7
+P 6900 2000
+F 0 "Conn?" H 6872 2047 60  0000 R CNN
+F 1 "AndersonPP" H 6872 2153 60  0000 R CNN
+F 2 "" H 6750 1450 60  0001 C CNN
+F 3 "" H 6750 1450 60  0001 C CNN
+	1    6900 2000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6500 2100 6300 2100
+Wire Wire Line
+	6300 2100 6300 2200
+$Comp
+L power:GND #PWR?
+U 1 1 61474772
+P 6300 2200
+F 0 "#PWR?" H 6300 1950 50  0001 C CNN
+F 1 "GND" H 6305 2027 50  0000 C CNN
+F 2 "" H 6300 2200 50  0001 C CNN
+F 3 "" H 6300 2200 50  0001 C CNN
+	1    6300 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRFS4115 Q?
+U 1 1 61476735
+P 4050 1850
+F 0 "Q?" H 4255 1896 50  0000 L CNN
+F 1 "IRFS4115" H 4255 1805 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 4250 1775 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/irfs4115pbf.pdf?fileId=5546d462533600a401535636e5d2218f" H 4050 1850 50  0001 L CNN
+	1    4050 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1850 2700 1850
+Wire Wire Line
+	4150 1650 4150 1550
+Wire Wire Line
+	4150 1550 3050 1550
+Connection ~ 3050 2650
+Wire Wire Line
+	4150 2650 4000 2650
+Connection ~ 4150 2650
+Wire Wire Line
+	3250 2650 3050 2650
+Wire Wire Line
+	3700 2650 3550 2650
+Wire Wire Line
+	4600 2650 4150 2650
+$Comp
+L Device:LED D?
+U 1 1 6147E4A6
+P 3400 2650
+F 0 "D?" H 3400 2750 50  0000 C CNN
+F 1 "LED" H 3400 2550 50  0000 C CNN
+F 2 "" H 3400 2650 50  0001 C CNN
+F 3 "~" H 3400 2650 50  0001 C CNN
+	1    3400 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6147D67A
+P 3850 2650
+F 0 "R?" V 3750 2650 50  0000 C CNN
+F 1 "3300" V 3850 2650 50  0000 C CNN
+F 2 "" V 3780 2650 50  0001 C CNN
+F 3 "~" H 3850 2650 50  0001 C CNN
+	1    3850 2650
+	0    1    1    0   
+$EndComp
+Text GLabel 4600 2650 2    50   Input ~ 0
+Anderson1
+Wire Wire Line
+	4150 2050 4150 2650
+Wire Wire Line
+	3050 2250 3050 2650
+Wire Wire Line
+	2150 2150 2150 2650
+Wire Wire Line
+	1200 2250 1200 2650
+$Comp
+L MRDT_Connectors:AndersonPP Conn?
+U 3 1 6148830C
+P 6900 1550
+F 0 "Conn?" H 6872 1597 60  0000 R CNN
+F 1 "AndersonPP" H 6872 1703 60  0000 R CNN
+F 2 "" H 6750 1000 60  0001 C CNN
+F 3 "" H 6750 1000 60  0001 C CNN
+	3    6900 1550
+	-1   0    0    1   
+$EndComp
+Text GLabel 6300 1650 0    50   Input ~ 0
+Anderson1
+Wire Wire Line
+	6500 1650 6300 1650
+Text Notes 3300 2850 0    50   ~ 0
+green
+$Sheet
+S 4350 3700 1200 500 
+U 6148A7D1
+F0 "tiva" 50
+F1 "tiva.sch" 50
+F2 "A1_signal" I L 4350 3800 50 
+$EndSheet
+Text GLabel 4100 3800 0    50   Input ~ 0
+A1_signal
+Wire Wire Line
+	4350 3800 4100 3800
+$Comp
+L Device:CP1 C?
+U 1 1 614DD5BC
+P 1450 4000
+F 0 "C?" H 1565 4046 50  0000 L CNN
+F 1 "22uF 50V" H 1565 3955 50  0000 L CNN
+F 2 "" H 1450 4000 50  0001 C CNN
+F 3 "~" H 1450 4000 50  0001 C CNN
+	1    1450 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 614E07D6
+P 2850 4000
+F 0 "C?" H 2965 4046 50  0000 L CNN
+F 1 "0.1uF" H 2965 3955 50  0000 L CNN
+F 2 "" H 2888 3850 50  0001 C CNN
+F 3 "~" H 2850 4000 50  0001 C CNN
+	1    2850 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 614DE74B
+P 2500 4000
+F 0 "C?" H 2300 4050 50  0000 L CNN
+F 1 "10uF" H 2200 3950 50  0000 L CNN
+F 2 "" H 2538 3850 50  0001 C CNN
+F 3 "~" H 2500 4000 50  0001 C CNN
+	1    2500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Devices:OKI U?
+U 1 1 614DC8CE
+P 1800 3700
+F 0 "U?" H 1850 3650 60  0001 C CNN
+F 1 "OKI" H 2000 3981 60  0000 C CNN
+F 2 "" H 1600 3600 60  0001 C CNN
+F 3 "" H 1600 3600 60  0001 C CNN
+	1    1800 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3600 1450 3600
+Wire Wire Line
+	1450 3600 1450 3850
+Wire Wire Line
+	1450 4300 2000 4300
+Wire Wire Line
+	2850 4300 2850 4150
+Wire Wire Line
+	1450 4150 1450 4300
+Wire Wire Line
+	2500 4150 2500 4300
+Connection ~ 2500 4300
+Wire Wire Line
+	2500 4300 2850 4300
+Wire Wire Line
+	2000 4300 2000 3900
+Connection ~ 2000 4300
+Wire Wire Line
+	2000 4300 2500 4300
+Wire Wire Line
+	2400 3600 2500 3600
+Wire Wire Line
+	2850 3600 2850 3850
+Wire Wire Line
+	2500 3850 2500 3600
+Connection ~ 2500 3600
+Wire Wire Line
+	2500 3600 2850 3600
+Wire Wire Line
+	3000 3600 2850 3600
+Connection ~ 2850 3600
+Wire Wire Line
+	1300 3600 1450 3600
+Connection ~ 1450 3600
+$Comp
+L power:GND #PWR?
+U 1 1 614EC7E0
+P 2000 4450
+F 0 "#PWR?" H 2000 4200 50  0001 C CNN
+F 1 "GND" H 2005 4277 50  0000 C CNN
+F 2 "" H 2000 4450 50  0001 C CNN
+F 3 "" H 2000 4450 50  0001 C CNN
+	1    2000 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 4450 2000 4300
+Wire Wire Line
+	3000 3450 3000 3600
+$Comp
+L power:+5V #PWR?
+U 1 1 614EEB3B
+P 3000 3450
+F 0 "#PWR?" H 3000 3300 50  0001 C CNN
+F 1 "+5V" H 3015 3623 50  0000 C CNN
+F 2 "" H 3000 3450 50  0001 C CNN
+F 3 "" H 3000 3450 50  0001 C CNN
+	1    3000 3450
+	1    0    0    -1  
+$EndComp
+Text GLabel 1300 3600 0    50   Input ~ 0
+PV
+$Comp
+L Device:CP1 C?
+U 1 1 614F0C7E
+P 1450 5950
+F 0 "C?" H 1565 5996 50  0000 L CNN
+F 1 "22uF 50V" H 1565 5905 50  0000 L CNN
+F 2 "" H 1450 5950 50  0001 C CNN
+F 3 "~" H 1450 5950 50  0001 C CNN
+	1    1450 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 614F0C84
+P 2850 5950
+F 0 "C?" H 2965 5996 50  0000 L CNN
+F 1 "0.1uF" H 2965 5905 50  0000 L CNN
+F 2 "" H 2888 5800 50  0001 C CNN
+F 3 "~" H 2850 5950 50  0001 C CNN
+	1    2850 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 614F0C8A
+P 2500 5950
+F 0 "C?" H 2300 6000 50  0000 L CNN
+F 1 "10uF" H 2200 5900 50  0000 L CNN
+F 2 "" H 2538 5800 50  0001 C CNN
+F 3 "~" H 2500 5950 50  0001 C CNN
+	1    2500 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Devices:OKI U?
+U 1 1 614F0C90
+P 1800 5650
+F 0 "U?" H 1850 5600 60  0001 C CNN
+F 1 "OKI" H 2000 5931 60  0000 C CNN
+F 2 "" H 1600 5550 60  0001 C CNN
+F 3 "" H 1600 5550 60  0001 C CNN
+	1    1800 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5550 1450 5550
+Wire Wire Line
+	1450 5550 1450 5800
+Wire Wire Line
+	1450 6250 2000 6250
+Wire Wire Line
+	2850 6250 2850 6100
+Wire Wire Line
+	1450 6100 1450 6250
+Wire Wire Line
+	2500 6100 2500 6250
+Connection ~ 2500 6250
+Wire Wire Line
+	2500 6250 2850 6250
+Wire Wire Line
+	2000 6250 2000 5850
+Connection ~ 2000 6250
+Wire Wire Line
+	2000 6250 2500 6250
+Wire Wire Line
+	2400 5550 2500 5550
+Wire Wire Line
+	2850 5550 2850 5800
+Wire Wire Line
+	2500 5800 2500 5550
+Connection ~ 2500 5550
+Wire Wire Line
+	2500 5550 2850 5550
+Wire Wire Line
+	3000 5550 2850 5550
+Connection ~ 2850 5550
+Wire Wire Line
+	1300 5550 1450 5550
+Connection ~ 1450 5550
+$Comp
+L power:GND #PWR?
+U 1 1 614F0CAA
+P 2000 6400
+F 0 "#PWR?" H 2000 6150 50  0001 C CNN
+F 1 "GND" H 2005 6227 50  0000 C CNN
+F 2 "" H 2000 6400 50  0001 C CNN
+F 3 "" H 2000 6400 50  0001 C CNN
+	1    2000 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 6400 2000 6250
+Wire Wire Line
+	3000 5400 3000 5550
+Text GLabel 1300 5550 0    50   Input ~ 0
+PV
+$Comp
+L power:+3V3 #PWR?
+U 1 1 614F34AC
+P 3000 5400
+F 0 "#PWR?" H 3000 5250 50  0001 C CNN
+F 1 "+3V3" H 3015 5573 50  0000 C CNN
+F 2 "" H 3000 5400 50  0001 C CNN
+F 3 "" H 3000 5400 50  0001 C CNN
+	1    3000 5400
+	1    0    0    -1  
+$EndComp
+Text Notes 600  750  0    118  ~ 24
+LT1910 MOSFET Driver
+Text Notes 700  3350 0    118  ~ 24
+5V BUCK CONVERTER
+Text Notes 650  5150 0    118  ~ 24
+3.3V BUCK CONVERTER
+Text Notes 6250 850  0    118  ~ 24
+ANDERSONS
+Text Notes 4350 3450 0    118  ~ 24
+TIVA
+$EndSCHEMATC
