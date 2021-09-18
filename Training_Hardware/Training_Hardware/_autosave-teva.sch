@@ -1,0 +1,125 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MRDT_Shields:TM4C129E_Launchpad U?
+U 1 1 614778B8
+P 1550 2200
+F 0 "U?" H 1350 1950 60  0000 L CNN
+F 1 "TM4C129E_Launchpad" H 1350 1800 60  0000 L CNN
+F 2 "" H 1550 2200 60  0001 C CNN
+F 3 "" H 1550 2200 60  0001 C CNN
+	1    1550 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Shields:TM4C129E_Launchpad U?
+U 2 1 61486042
+P 2050 2200
+F 0 "U?" H 2400 1950 60  0000 C CNN
+F 1 "TM4C129E_Launchpad" H 2250 1650 60  0000 C CNN
+F 2 "" H 2050 2200 60  0001 C CNN
+F 3 "" H 2050 2200 60  0001 C CNN
+	2    2050 2200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MRDT_Shields:TM4C129E_Launchpad U?
+U 3 1 6149586A
+P 1550 4250
+F 0 "U?" H 1350 4000 60  0000 L CNN
+F 1 "TM4C129E_Launchpad" H 1350 3850 60  0000 L CNN
+F 2 "" H 1550 4250 60  0001 C CNN
+F 3 "" H 1550 4250 60  0001 C CNN
+	3    1550 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Shields:TM4C129E_Launchpad U?
+U 4 1 614983D9
+P 2050 4250
+F 0 "U?" H 2450 4000 60  0000 C CNN
+F 1 "TM4C129E_Launchpad" H 2250 3700 60  0000 C CNN
+F 2 "" H 2050 4250 60  0001 C CNN
+F 3 "" H 2050 4250 60  0001 C CNN
+	4    2050 4250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MRDT_Shields:TM4C129E_Launchpad U?
+U 5 1 6149C830
+P 4150 2200
+F 0 "U?" H 3900 1950 60  0000 L CNN
+F 1 "TM4C129E_Launchpad" H 3900 1800 60  0000 L CNN
+F 2 "" H 4150 2200 60  0001 C CNN
+F 3 "" H 4150 2200 60  0001 C CNN
+	5    4150 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Shields:TM4C129E_Launchpad U?
+U 6 1 6149FB31
+P 4650 2200
+F 0 "U?" H 5100 1950 60  0000 C CNN
+F 1 "TM4C129E_Launchpad" H 4900 1650 60  0000 C CNN
+F 2 "" H 4650 2200 60  0001 C CNN
+F 3 "" H 4650 2200 60  0001 C CNN
+	6    4650 2200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MRDT_Shields:TM4C129E_Launchpad U?
+U 7 1 614A2876
+P 5350 2200
+F 0 "U?" H 5100 1950 60  0000 L CNN
+F 1 "TM4C129E_Launchpad" H 5100 1800 60  0000 L CNN
+F 2 "" H 5350 2200 60  0001 C CNN
+F 3 "" H 5350 2200 60  0001 C CNN
+	7    5350 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Shields:TM4C129E_Launchpad U?
+U 8 1 614A58C5
+P 5850 2200
+F 0 "U?" H 6250 1950 60  0000 C CNN
+F 1 "TM4C129E_Launchpad" H 6100 1650 60  0000 C CNN
+F 2 "" H 5850 2200 60  0001 C CNN
+F 3 "" H 5850 2200 60  0001 C CNN
+	8    5850 2200
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 1350 1350
+NoConn ~ 1350 1450
+NoConn ~ 1350 1550
+NoConn ~ 1350 1650
+NoConn ~ 1350 1750
+NoConn ~ 1350 1850
+NoConn ~ 1350 1950
+NoConn ~ 1350 2050
+NoConn ~ 1350 2150
+NoConn ~ 2250 2150
+NoConn ~ 2250 2050
+NoConn ~ 2250 1950
+NoConn ~ 2250 1850
+NoConn ~ 2250 1750
+NoConn ~ 2250 1650
+NoConn ~ 2250 1550
+NoConn ~ 2250 1450
+NoConn ~ 2250 1350
+NoConn ~ 2250 1250
+NoConn ~ 1350 1250
+NoConn ~ 1350 3300
+$EndSCHEMATC
